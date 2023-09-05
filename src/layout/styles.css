@@ -1,0 +1,27 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 100vw;
+    grid-template-rows: 50% 100%;
+  }
+}
+
+
+@media screen and (min-width: 960px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-item {
+  background-color: aqua;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+}
